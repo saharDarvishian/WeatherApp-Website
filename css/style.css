@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #4d0de5;
+  --color-primary: rgb(77, 13, 229);
   --color-secondary: #7da1f7;
   --color-warning: #fae362;
   --color-error: #f75e4b;
@@ -15,4 +15,56 @@
 body {
   max-width: 1200px;
   margin: auto;
+  height: 100vh;
+}
+
+#search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 200px;
+  background: linear-gradient(
+    13deg,
+    var(--color-primary) 47%,
+    var(--color-secondary) 100%
+  );
+  border-radius: 0 0 40px 40px;
+  box-shadow: var(--color-secondary) 0px 20px 100px 0px;
+}
+
+#location {
+  width: 45px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.1 ease-in;
+}
+
+#location:hover {
+  transform: scale(1.3
+  );
+}
+
+#search input {
+  width: 300px;
+  height: 35px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px 0 0 10px;
+  color: var(--color-primary);
+  font-size: 0.9rem;
+}
+
+#search button {
+  height: 35px;
+  padding: 10px;
+  border-radius: 0 10px 10px 0;
+  background-color: var(--color-warning);
+  cursor: pointer;
+  border: none;
+  transition: all 0.1s ease-in;
+}
+
+#search button:hover {
+  color: var(--color-primary);
 }
